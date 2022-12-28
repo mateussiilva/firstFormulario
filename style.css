@@ -1,0 +1,90 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+:root{
+    --color-primary: #3d81da8f;
+    
+}
+
+body{
+    background-color: var(--color-primary);
+}
+
+h1{
+    text-align: center;
+    margin-top: 64px;
+    
+    
+}
+
+section{
+    position: absolute;
+    margin: auto;
+    width: 80%;
+    border-radius: 16px;
+
+    background-color: white;
+    padding: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    box-shadow: 4px 4px 10px black;
+
+}
+
+section > fieldset{
+    border: none;
+}
+
+
+legend {
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( to right, var(--color-primary),white);
+    width: 100%;
+    padding: 8px;
+}
+
+/* FORMULARIO  */
+
+div{
+    margin-left: 24px;
+}
+
+div > input{
+    margin-bottom: 15px;
+    
+}
+
+input[type='text'], input[type='email'],
+input[type='tel'], input[type='number'],input[type='date']{
+    border: none;
+    border-bottom: 1px solid black;    
+}
+
+input:focus{
+    outline: none;
+}
+
+div.buttons > input{
+    padding: 8px 32px;
+    border: none;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    margin-top: 32px;
+    border-radius: 5px;
+
+    box-shadow: 3px 4px 8px black;
+    
+}
